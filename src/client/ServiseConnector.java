@@ -75,7 +75,7 @@ public class ServiseConnector {
     public void updateSubsection(String sectionName, String subsectionName, String newInfo) {
         Form form=new Form();
         form.param("subsection",gson.toJson(new Subsection(subsectionName,newInfo)));
-        System.out.println(gson.toJson(new Subsection(subsectionName,newInfo)));
+        //System.out.println(gson.toJson(new Subsection(subsectionName,newInfo)));
         Response response = target.path("rest").
                 path("sections").
                 path(sectionName).
